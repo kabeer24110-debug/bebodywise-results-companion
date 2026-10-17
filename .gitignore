@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-single/
+*.tsbuildinfo
+.DS_Store
+# demo-video working files
+demo-video/tts/
+demo-video/frames/
+demo-video/out/
+demo-video/node_modules/
