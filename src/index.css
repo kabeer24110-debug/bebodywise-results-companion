@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body { background: #FAF7F2; color: #2A2826; }
+body { font-family: Figtree, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: #FAF7F2; }
+h1, h2, h3 { text-wrap: balance; }
+.gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.tabular { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid #4E6956; outline-offset: 2px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.fade-in { animation: fadeIn .35s ease-out both; }
+@keyframes fadeIn { from { opacity: .001; transform: translateY(4px); } to { opacity: 1; transform: none; } }
